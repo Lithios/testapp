@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"<
+<head>
+<title>
+Posts: <%= controller.action_name %>
+</title>
+<%= stylesheet_link_tag 'http://yui.yahooapis.com/2.5.2/build/reset-fonts-grids/reset-fonts-grids.css' %>
+<%= stylesheet_link_tag 'http://yui.yahooapis.com/2.5.2/build/base/base-min.css' %>
+</head>
+<body>
+<div id="doc">
+
+<div id="hd">
+<h1>Test Blog</h1>
+</div>
+
+<div id="bd">
+<p class="flash"><%= flash[:notice] %></p>
+<%= yield  %>
+</div>
+
+<div id="ft">
+<small>Copyright 2008</small>
+</div>
+
+</div>
+</body>
+</html>
